@@ -30,6 +30,10 @@ body{
     margin-top: 6%;
     grid-row: 1 ;
 }
+.card img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 .card a{
     text-decoration: none;
     background-color: #C4A63E;
@@ -47,6 +51,11 @@ body{
     text-align: center;
     grid-row: 2 ;
     transition: background-color 0.3s, color 0.3s;
+}
+.card a:hover{
+    background-color: #000000;
+    color: #C4A63E;
+    cursor: pointer;
 }
 .card h4{
     font-weight: bold;
@@ -82,7 +91,10 @@ body{
     object-fit: cover;
     margin: 0;
 }
-
+.card .card-footer .logo:focus{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 .card .card-footer h2{
     font-size: 18px;
     margin-left: 12px;
